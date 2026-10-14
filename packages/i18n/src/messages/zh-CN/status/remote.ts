@@ -8,7 +8,7 @@ export const messages = {
   "status.remote.setupUpdateRuntime": "更新远程桌面运行时以检查macOS权限。",
   "status.remote.setupCheckFailed": "Sunshine无法完成权限检查。检查主机会话，然后重试。",
   "status.remote.setupServiceFailed": "远程桌面服务无法启动。检查此macOS用户是否具有活动的GUI会话。",
-  "status.remote.connectingSunshine": "通过阳光连接......",
+  "status.remote.connectingSunshine": "正在通过 Sunshine 连接……",
   "status.remote.switchingMonitor": "切换共享显示器...",
   "status.remote.controlConnected": "已连接遥控器。",
   "status.remote.controlFailed": "远程控制失败。",
