@@ -10,6 +10,7 @@ import { source as pl } from "./messages/pl/source";
 import { source as pt } from "./messages/pt/source";
 import { source as ru } from "./messages/ru/source";
 import { source as tr } from "./messages/tr/source";
+import { source as zhCN } from "./messages/zh-CN/source";
 import { createSourceLocalizer } from "./source-matcher";
 
 export type { TranslatedLocale } from "./locale";
@@ -27,7 +28,7 @@ export type { TranslatedLocale } from "./locale";
  */
 export type SourceMessages = typeof en;
 
-const catalogs = { en, de, es, fr, it, ja, pl, pt, ru, tr } as const;
+const catalogs = { en, de, es, fr, it, ja, pl, pt, ru, tr, "zh-CN": zhCN } as const;
 
 /** The English text for a source key. Write it where the code threw a literal before. */
 export const sourceText: Translate<SourceMessages> = createTranslate({

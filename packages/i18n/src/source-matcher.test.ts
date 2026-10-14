@@ -33,6 +33,7 @@ const localizer = createSourceLocalizer({
     pt: {},
     ru: {},
     tr: {},
+    "zh-CN": {},
   },
 });
 

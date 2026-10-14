@@ -10,6 +10,7 @@ import { pl } from "./messages/pl/index";
 import { pt } from "./messages/pt/index";
 import { ru } from "./messages/ru/index";
 import { tr } from "./messages/tr/index";
+import { zhCN } from "./messages/zh-CN/index";
 
 export { APP_LANGUAGES, type AppLanguage, DEFAULT_APP_LANGUAGE } from "@openbot/contracts/app-language";
 export { type AppFormat, createFormat } from "./format";
@@ -25,9 +26,9 @@ export {
 } from "./message";
 export type { AppMessages } from "./messages/en/index";
 export { localizeSourceText, matchingSourceKeys, type SourceMessages, sourceText } from "./source-text";
-export { de, en, es, fr, it, ja, pl, pt, ru, tr };
+export { de, en, es, fr, it, ja, pl, pt, ru, tr, zhCN };
 
-const catalogs = { en, de, es, fr, it, ja, pl, pt, ru, tr } as const;
+const catalogs = { en, de, es, fr, it, ja, pl, pt, ru, tr, "zh-CN": zhCN } as const;
 
 /** The desktop translator: every key of the desktop catalog, including shared and source keys. */
 export type AppTranslate = Translate<AppMessages>;

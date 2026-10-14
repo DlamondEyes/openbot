@@ -1,7 +1,7 @@
 import type { AppLanguage } from "@openbot/contracts/app-language";
 
 /** The languages a catalog exists for. `"system"` resolves to one of these; it is never one itself. */
-export const TRANSLATED_LOCALES = ["en", "de", "es", "fr", "it", "ja", "pl", "pt", "ru", "tr"] as const;
+export const TRANSLATED_LOCALES = ["en", "de", "es", "fr", "it", "ja", "pl", "pt", "ru", "tr", "zh-CN"] as const;
 
 export type TranslatedLocale = (typeof TRANSLATED_LOCALES)[number];
 
@@ -12,14 +12,21 @@ function isTranslatedLocale(value: string): value is TranslatedLocale {
 /**
  * The locale to draw in, given the saved preference and the computer's own language.
  *
- * A system locale is matched on its language subtag, so `ja-JP` and `ja` both read Japanese, and
- * anything without a catalog falls back to English rather than to a half-translated screen.
+ * A system locale is matched on its language subtag, so `ja-JP` and `ja` both read Japanese. Chinese
+ * uses the Simplified Chinese catalog unless the system asks for Traditional Chinese. Anything
+ * without a catalog falls back to English rather than to a half-translated screen.
  */
 export function resolveLocale(language: AppLanguage, systemLocale: string): TranslatedLocale {
   if (language !== "system") {
     return isTranslatedLocale(language) ? language : "en";
   }
-  const subtag = systemLocale.split("-")[0]?.toLowerCase() ?? "";
+  const subtags = systemLocale.replaceAll("_", "-").split("-");
+  const subtag = subtags[0]?.toLowerCase() ?? "";
+  if (subtag === "zh") {
+    const script = subtags.find((part) => part.length === 4)?.toLowerCase();
+    const region = subtags.find((part) => part.length === 2 || part.length === 3)?.toUpperCase();
+    return script === "hant" || region === "TW" || region === "HK" || region === "MO" ? "en" : "zh-CN";
+  }
   return isTranslatedLocale(subtag) ? subtag : "en";
 }
 
