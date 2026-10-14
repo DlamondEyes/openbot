@@ -63,7 +63,7 @@ export const messages = {
   "onboarding.error.refresh": "OpenBot无法刷新您的本地AI服务商。再试一次。",
   "onboarding.error.finish": "OpenBot无法完成设置。",
   "onboarding.toast.connecting": "正在连接 {provider}。如果浏览器窗口打开，则完成登录。",
-  "onboarding.progress": "{total} 的入职步骤 {step}",
+  "onboarding.progress": "第 {step} 步，共 {total} 步",
   "onboarding.choice.title": "建立你的人工智能团队。",
   "onboarding.choice.description": "选择一个。您可以稍后更改此设置。",
   "onboarding.choice.startFree": "免费开始",

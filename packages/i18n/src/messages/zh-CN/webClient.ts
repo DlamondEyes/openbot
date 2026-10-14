@@ -5,7 +5,7 @@ export const messages = {
   "webClient.loading": "正在加载OpenBot…",
   "webClient.loadingLine.wake": "唤醒智能体…",
   "webClient.loadingLine.coffee": "为智能体倒咖啡……",
-  "webClient.loadingLine.tokens": "数手指上的代币……",
+  "webClient.loadingLine.tokens": "正在数 Token……",
   "webClient.loadingLine.prompts": "解开提示......",
   "webClient.loadingLine.sleepy": "好好地问一下瞌睡的人……",
   "webClient.loadingLine.almost": "快到了。大概。",

@@ -90,11 +90,11 @@ export const messages = {
 
   "agentSettings.fullAccess.title": "授予此智能体完全访问权限吗？",
   "agentSettings.fullAccess.description":
-    "智能体然后可以读取、更改和删除您的用户帐户可以访问的任何文件、运行任何命令以及使用网络。一条被误解的指令或恶意网页可能会访问您的个人文件。",
+    "授予后，智能体可以读取、修改和删除您账户有权访问的任何文件，运行任意命令并访问网络。误解的指令或恶意网页都可能使其访问您的个人文件。",
   "agentSettings.fullAccess.cancel": "仅保留工作区",
   "agentSettings.fullAccess.confirm": "允许完全访问",
 
-  "agentSettings.links.usage": "用法",
+  "agentSettings.links.usage": "使用情况",
   "agentSettings.links.memories": "记忆",
   "agentSettings.links.memoriesCount": { one: "已保存 {count} 条", other: "已保存 {count} 条" },
   "agentSettings.links.skills": "技能",

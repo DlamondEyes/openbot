@@ -151,7 +151,7 @@ export const messages = {
   "server.rail.unmute": "取消静音服务器",
   "server.rail.mute": "静音服务器",
   "server.rail.notificationSettings": "通知设置",
-  "server.rail.usage": "用法",
+  "server.rail.usage": "使用情况",
   "server.rail.schedule": "例程",
   "server.rail.settings": "服务器设置",
   // The last items of the server menu. Leave is for a joined server; restart and delete are for a hosted server that the user owns.

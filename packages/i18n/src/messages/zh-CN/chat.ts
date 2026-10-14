@@ -283,6 +283,6 @@ export const messages = {
   "chat.compaction.running": "压缩上下文",
   "chat.compaction.completed": "上下文压缩",
   "chat.compaction.failed": "无法压缩上下文",
-  "chat.compaction.tokens": "{before} → {after} 代币",
+  "chat.compaction.tokens": "{before} → {after} 个 Token",
   "chat.compaction.continues": "排队的消息继续。",
 } as const satisfies PartialTranslation<typeof source>;

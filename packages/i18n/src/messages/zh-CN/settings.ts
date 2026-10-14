@@ -115,7 +115,7 @@ export const messages = {
   "settings.tab.voice.description": "消息框中的听写。本地模型在此计算机上运行； ElevenLabs在云中运行。",
   "settings.tab.computerUse.title": "计算机使用",
   "settings.tab.computerUse.description": "允许OpenBot查看此计算机上的应用程序并与之交互。",
-  "settings.tab.profile.title": "简介",
+  "settings.tab.profile.title": "个人资料",
   "settings.tab.profile.description": "管理您在OpenBot中的显示方式。",
   "settings.tab.mobileConnect.title": "移动连接",
   "settings.tab.mobileConnect.description": "在您的手机上安全登录。",
@@ -243,7 +243,7 @@ export const messages = {
   "settings.profile.account.title": "帐户",
   "settings.profile.email.title": "电子邮件",
   "settings.profile.email.description": "用于登录OpenBot。",
-  "settings.profile.sessions.title": "帐户会话",
+  "settings.profile.sessions.title": "账户会话",
   "settings.profile.sessions.description":
     "会话保持登录状态，直到您注销或断开连接。断开连接还会结束该帐户的活动远程连接。",
   "settings.profile.sessions.loading": "正在加载会话...",
@@ -252,11 +252,11 @@ export const messages = {
   "settings.profile.sessions.kind.desktop": "桌面",
   "settings.profile.sessions.kind.mobile": "手机",
   "settings.profile.sessions.kind.hostedServer": "托管服务器",
-  "settings.profile.sessions.hostedServerNote": "Disconnect将服务器签出。重启服务器即可重新登录。",
+  "settings.profile.sessions.hostedServerNote": "断开连接会使服务器退出登录。重启服务器即可重新登录。",
   // {kind} is Desktop or Mobile. {signedIn} and {lastActive} are a date and a time.
   "settings.profile.sessions.details": "{kind} · 已登录 {signedIn} · 最后活跃 {lastActive}",
   "settings.profile.sessions.disconnectLabel": "从 {signedIn} 断开 {name} 会话",
-  "settings.profile.sessions.loadFailed": "无法加载帐户会话。请再试一次。",
+  "settings.profile.sessions.loadFailed": "无法加载账户会话。请重试。",
   "settings.profile.sessions.disconnectFailed": "无法断开此会话。请再试一次。",
   // The Updates tab. {target} is "OpenBot v1.2.3" or settings.updates.target.latest.
   "settings.updates.title": "OpenBot更新",

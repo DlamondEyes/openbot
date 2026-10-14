@@ -12,12 +12,12 @@ export const messages = {
   "notification.failed": "因错误而停止。",
   "notification.usageLimit.title": "{provider}账户已达到上限",
   "notification.usageLimit.body": {
-    one: "{count} 智能体 等待。 OpenBot 稍后再试。",
-    other: "{count} 智能体 等等。 OpenBot 稍后再试。",
+    one: "有 {count} 个智能体正在等待，OpenBot 稍后会重试。",
+    other: "有 {count} 个智能体正在等待，OpenBot 稍后会重试。",
   },
   "notification.usageLimit.bodyResets": {
-    one: "{count} 智能体 等待。重置 {reset}。",
-    other: "{count} 智能体 等等。重置 {reset}。",
+    one: "有 {count} 个智能体正在等待。使用限额将在 {reset} 重置。",
+    other: "有 {count} 个智能体正在等待。使用限额将在 {reset} 重置。",
   },
   "notification.test": "通知正在运行。",
   "notification.welcome": "OpenBot当智能体需要您时会在这里告诉您。",
