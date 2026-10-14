@@ -17,7 +17,7 @@ export const messages = {
   "error.auth.serviceStatus": "帐户服务返回错误 ({status})。稍后再试。",
   "error.auth.invalidHostedServer": "帐户服务返回无效的托管服务器。",
   "error.auth.codeNotSent": "OpenBot无法发送登录代码。",
-  "error.auth.deliveryTimeout": "OpenBot无法及时确认交货。代码可能仍会到达；再次发送前请检查递送情况。",
+  "error.auth.deliveryTimeout": "OpenBot 未能及时确认验证码是否已发送。验证码仍可能送达；再次发送前请检查收件箱。",
   "error.auth.deliveryInterrupted": "在OpenBot确认发送之前连接结束。检查递送以避免发送另一个代码。",
   "error.auth.deliveryUnknown": "OpenBot无法确认登录代码是否已发送。再次发送前请检查递送情况。",
 } as const satisfies PartialTranslation<typeof source>;
