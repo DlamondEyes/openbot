@@ -1,0 +1,32 @@
+import type { PartialTranslation } from "../../../message";
+import type { messages as source } from "../../en/mobile/app";
+
+export const messages = {
+  "mobile.app.route.scanQrCode": "扫描二维码",
+  "mobile.app.route.createAgent": "创建智能体",
+  "mobile.app.route.addSharedAgent": "添加共享智能体",
+  "mobile.app.route.newSection": "新部分",
+  "mobile.app.route.settings": "设置",
+  "mobile.app.route.profile": "简介",
+  "mobile.app.route.accountSessions": "帐户会话",
+  "mobile.app.route.about": "关于",
+  "mobile.app.route.support": "支持",
+  "mobile.app.route.hiddenChats": "隐藏聊天",
+  "mobile.app.route.cropPhoto": "移动和缩放",
+  "mobile.app.route.queuedMessages": "排队消息",
+  "mobile.app.route.messageOptions": "消息选项",
+  "mobile.app.route.editMessage": "编辑消息",
+  "mobile.app.route.serverOptions": "服务器选项",
+  "mobile.app.route.members": "成员",
+  "mobile.app.route.hostedServerPlans": "云服务器",
+  "mobile.app.route.hostedServerSetup": "设置",
+  "mobile.app.route.routines": "例程",
+  "mobile.app.route.routine": "例程",
+  "mobile.app.route.usage": "用法",
+  "mobile.app.route.message": "消息",
+  "mobile.app.messageActions.reply": "回复",
+  "mobile.app.messageActions.selectText": "选择文本",
+  "mobile.app.messageActions.copied": "消息已复制",
+  "mobile.app.messageActions.copy": "复制消息",
+  "mobile.app.messageActions.text": "消息文本",
+} as const satisfies PartialTranslation<typeof source>;
