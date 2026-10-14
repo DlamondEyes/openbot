@@ -10,6 +10,7 @@ import { messages as pl } from "./messages/pl/format";
 import { messages as pt } from "./messages/pt/format";
 import { messages as ru } from "./messages/ru/format";
 import { messages as tr } from "./messages/tr/format";
+import { messages as zhCN } from "./messages/zh-CN/format";
 
 /**
  * Numbers, dates, lists and sizes in the interface language.
@@ -38,7 +39,7 @@ export interface AppFormat {
   fileSize: (bytes: number) => string;
 }
 
-const catalogs = { en, de, es, fr, it, ja, pl, pt, ru, tr } as const;
+const catalogs = { en, de, es, fr, it, ja, pl, pt, ru, tr, "zh-CN": zhCN } as const;
 
 const numberFormats = new Map<string, Intl.NumberFormat>();
 
